@@ -1,0 +1,17 @@
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LoginPage from '../pages/LoginPage'
+import ForgotPasswordPage from '../pages/ForgotPasswordPage'
+
+const AppRoutes = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default AppRoutes
